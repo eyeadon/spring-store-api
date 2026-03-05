@@ -1,12 +1,10 @@
 package com.evan.store.controllers;
 
 import com.evan.store.dtos.UserDto;
-import com.evan.store.entities.User;
 import com.evan.store.mappers.UserMapper;
 import com.evan.store.repositories.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -41,7 +39,7 @@ public class UserController {
     }
 
     // var userDto = new UserDto(user.getId(), user.getName(), user.getEmail());
-    // return new ResponseEntity<>(user, HttpStatus.OK);
+    // return new ResponseEntity<>(userDto, HttpStatus.OK);
     return ResponseEntity.ok(userMapper.toDto(user));
   }
 

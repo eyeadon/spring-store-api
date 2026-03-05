@@ -1,15 +1,15 @@
 package com.evan.store.dtos;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 
-@AllArgsConstructor
-@Getter
+import java.math.BigDecimal;
+
+@Data
 public class ProductDto {
   private Long id;
   private String name;
+  private BigDecimal price;
   private String description;
-  private Double price;
   private Byte categoryId;
 }
 
