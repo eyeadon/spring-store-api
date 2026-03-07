@@ -34,7 +34,6 @@ public class ProductController {
 
     return products
             .stream()
-            // .map(user -> new UserDto(user.getId(), user.getName(), user.getEmail()))
             .map(productMapper::toDto)
             .toList();
   }
