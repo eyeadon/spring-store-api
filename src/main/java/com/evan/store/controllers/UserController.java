@@ -6,13 +6,17 @@ import com.evan.store.dtos.UpdateUserRequest;
 import com.evan.store.dtos.UserDto;
 import com.evan.store.mappers.UserMapper;
 import com.evan.store.repositories.UserRepository;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 @RestController
@@ -52,7 +56,7 @@ public class UserController {
 
   @PostMapping
   public ResponseEntity<UserDto> createUser(
-          @RequestBody RegisterUserRequest request,
+          @Valid @RequestBody RegisterUserRequest request,
           UriComponentsBuilder uriBuilder
   ) {
     var user = userMapper.toEntity(request);
