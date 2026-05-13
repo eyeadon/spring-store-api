@@ -35,7 +35,8 @@ public class AuthController {
             )
     );
 
-    var token = jwtService.generateToken(request.getEmail());
+    var user = userRepository.findByEmail(request.getEmail()).orElseThrow();
+    var token = jwtService.generateToken(user);
 
     return ResponseEntity.ok(new JwtResponse(token));
   }
@@ -51,10 +52,10 @@ public class AuthController {
   public ResponseEntity<UserDto> me() {
     // returns auth object (JwtAuthenticationFilter.java)
     var authentication = SecurityContextHolder.getContext().getAuthentication();
-    // getPrincipal returns current user or principal, in this case email is principal
-    var email = (String) authentication.getPrincipal();
+    // getPrincipal returns current user or principal
+    var userId = (Long) authentication.getPrincipal();
 
-    var user = userRepository.findByEmail(email).orElse(null);
+    var user = userRepository.findById(userId).orElse(null);
     if (user == null) {
       return ResponseEntity.notFound().build();
     }
