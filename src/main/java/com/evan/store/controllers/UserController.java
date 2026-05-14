@@ -4,6 +4,7 @@ import com.evan.store.dtos.ChangePasswordRequest;
 import com.evan.store.dtos.RegisterUserRequest;
 import com.evan.store.dtos.UpdateUserRequest;
 import com.evan.store.dtos.UserDto;
+import com.evan.store.entities.Role;
 import com.evan.store.mappers.UserMapper;
 import com.evan.store.repositories.UserRepository;
 import jakarta.validation.Valid;
@@ -67,6 +68,7 @@ public class UserController {
 
     var user = userMapper.toEntity(request);
     user.setPassword(passwordEncoder.encode(user.getPassword()));
+    user.setRole(Role.USER);
     userRepository.save(user);
 
     var userDto = userMapper.toDto(user);
