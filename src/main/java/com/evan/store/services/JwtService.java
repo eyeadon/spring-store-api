@@ -9,6 +9,7 @@ import io.jsonwebtoken.Jwts;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.crypto.SecretKey;
 import java.util.Date;
 
 @AllArgsConstructor
@@ -16,35 +17,25 @@ import java.util.Date;
 public class JwtService {
   private final JwtConfig jwtConfig;
 
-  public String generateAccessToken(User user) {
+  public Jwt generateAccessToken(User user) {
     return generateToken(user, jwtConfig.getAccessTokenExpiration());
   }
 
-  public String generateRefreshToken(User user) {
+  public Jwt generateRefreshToken(User user) {
     return generateToken(user, jwtConfig.getRefreshTokenExpiration());
   }
 
-  private String generateToken(User user, long tokenExpiration) {
-    return Jwts.builder()
+  private Jwt generateToken(User user, long tokenExpiration) {
+    var claims = Jwts.claims()
             .subject(user.getId().toString())
-            .claim("name", user.getName())
-            .claim("email", user.getEmail())
-            .claim("role", user.getRole())
+            .add("name", user.getName())
+            .add("email", user.getEmail())
+            .add("role", user.getRole())
             .issuedAt(new Date())
             .expiration(new Date(System.currentTimeMillis() + 1000 * tokenExpiration))
-            .signWith(jwtConfig.getSecretKey())
-            .compact();
-  }
+            .build();
 
-  public boolean validateToken(String token) {
-    try {
-      var claims = getClaims(token);
-
-      return claims.getExpiration().after(new Date());
-    }
-    catch (JwtException ex) {
-      return false;
-    }
+    return new Jwt(claims, jwtConfig.getSecretKey());
   }
 
   private Claims getClaims(String token) {
@@ -55,13 +46,13 @@ public class JwtService {
             .getPayload();
   }
 
-  public Long getUserIdFromToken(String token) {
-    return Long.valueOf(getClaims(token).getSubject());
+  public Jwt parseToken(String token) {
+    try {
+      var claims = getClaims(token);
+      return new Jwt(claims, jwtConfig.getSecretKey());
+    } catch (JwtException e) {
+      return null;
+    }
   }
-
-  public Role getRoleFromToken(String token) {
-    return Role.valueOf(getClaims(token).get("role", String.class));
-  }
-
 
 }
