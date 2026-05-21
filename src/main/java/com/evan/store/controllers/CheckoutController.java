@@ -2,6 +2,7 @@ package com.evan.store.controllers;
 
 import com.evan.store.dtos.CheckoutRequest;
 import com.evan.store.dtos.CheckoutResponse;
+import com.evan.store.dtos.ErrorDto;
 import com.evan.store.entities.Order;
 import com.evan.store.entities.OrderItem;
 import com.evan.store.entities.OrderStatus;
@@ -35,13 +36,15 @@ public class CheckoutController {
     var cart = cartRepository.getCartWithItems(request.getCartId()).orElse(null);
     if (cart == null) {
       return ResponseEntity.badRequest().body(
-              Map.of("error", "Cart not found")
+              // Map.of("error", "Cart not found")
+              new ErrorDto("Cart not found")
       );
     }
 
     if (cart.getItems().isEmpty()) {
       return ResponseEntity.badRequest().body(
-              Map.of("error", "Cart is empty")
+              // Map.of("error", "Cart is empty")
+              new ErrorDto("Cart is empty")
       );
     }
 

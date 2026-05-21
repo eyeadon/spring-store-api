@@ -1,9 +1,6 @@
 package com.evan.store.controllers;
 
-import com.evan.store.dtos.AddItemToCartRequest;
-import com.evan.store.dtos.CartDto;
-import com.evan.store.dtos.CartItemDto;
-import com.evan.store.dtos.UpdateCartItemRequest;
+import com.evan.store.dtos.*;
 import com.evan.store.exceptions.CartNotFoundException;
 import com.evan.store.exceptions.ProductNotFoundException;
 import com.evan.store.services.CartService;
@@ -78,13 +75,13 @@ public class CartController {
   }
 
   @ExceptionHandler(CartNotFoundException.class)
-  public ResponseEntity<Map<String, String>> handleCartNotFound() {
-    return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("error", "Cart not found."));
+  public ResponseEntity<ErrorDto> handleCartNotFound() {
+    return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorDto("Cart not found"));
   }
 
   @ExceptionHandler(ProductNotFoundException.class)
-  public ResponseEntity<Map<String, String>> handleProductNotFound() {
-    return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", "Product not found."));
+  public ResponseEntity<ErrorDto> handleProductNotFound() {
+    return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ErrorDto("Product not found"));
   }
 
 }
