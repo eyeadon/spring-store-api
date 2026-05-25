@@ -7,4 +7,6 @@ spring:
     refreshTokenExpiration: 604800 # 7d
   profiles:
     active: dev
+stripe:
+  secretKey: ${STRIPE_SECRET_KEY}
 
