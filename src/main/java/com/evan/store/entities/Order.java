@@ -33,7 +33,8 @@ public class Order {
   @Column(name = "total_price")
   private BigDecimal totalPrice;
 
-  @OneToMany(mappedBy = "order", cascade = CascadeType.PERSIST)
+  // if removing an order, remove items as well
+  @OneToMany(mappedBy = "order", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
   private Set<OrderItem> items = new LinkedHashSet<>();
 
   public static Order fromCart(Cart cart, User customer) {
