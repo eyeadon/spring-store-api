@@ -1,7 +1,5 @@
-package com.evan.store.mappers;
+package com.evan.store.orders;
 
-import com.evan.store.dtos.OrderDto;
-import com.evan.store.entities.Order;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

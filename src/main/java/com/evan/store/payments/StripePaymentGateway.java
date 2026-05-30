@@ -1,8 +1,8 @@
 package com.evan.store.payments;
 
-import com.evan.store.entities.Order;
-import com.evan.store.entities.OrderItem;
-import com.evan.store.entities.PaymentStatus;
+import com.evan.store.orders.Order;
+import com.evan.store.orders.OrderItem;
+import com.evan.store.orders.PaymentStatus;
 import com.stripe.exception.SignatureVerificationException;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Event;

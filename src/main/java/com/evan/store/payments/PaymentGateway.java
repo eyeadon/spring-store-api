@@ -1,6 +1,6 @@
 package com.evan.store.payments;
 
-import com.evan.store.entities.Order;
+import com.evan.store.orders.Order;
 
 import java.util.Optional;
 

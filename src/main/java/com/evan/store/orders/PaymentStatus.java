@@ -1,4 +1,4 @@
-package com.evan.store.entities;
+package com.evan.store.orders;
 
 public enum PaymentStatus {
   PENDING,

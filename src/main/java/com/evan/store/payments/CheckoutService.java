@@ -1,10 +1,10 @@
 package com.evan.store.payments;
 
-import com.evan.store.entities.Order;
+import com.evan.store.orders.Order;
 import com.evan.store.carts.CartEmptyException;
 import com.evan.store.carts.CartNotFoundException;
 import com.evan.store.carts.CartRepository;
-import com.evan.store.repositories.OrderRepository;
+import com.evan.store.orders.OrderRepository;
 import com.evan.store.auth.AuthService;
 import com.evan.store.carts.CartService;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.evan.store.exceptions;
+package com.evan.store.orders;
 
 public class OrderNotFoundException extends RuntimeException {
   public OrderNotFoundException() {

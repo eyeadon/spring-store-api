@@ -1,6 +1,6 @@
 package com.evan.store.payments;
 
-import com.evan.store.entities.PaymentStatus;
+import com.evan.store.orders.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

@@ -1,6 +1,5 @@
-package com.evan.store.repositories;
+package com.evan.store.orders;
 
-import com.evan.store.entities.Order;
 import com.evan.store.users.User;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,4 +1,4 @@
-package com.evan.store.entities;
+package com.evan.store.orders;
 
 import com.evan.store.products.Product;
 import jakarta.persistence.Column;
