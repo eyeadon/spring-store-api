@@ -1,4 +1,4 @@
-package com.evan.store.exceptions;
+package com.evan.store.payments;
 
 import lombok.NoArgsConstructor;
 

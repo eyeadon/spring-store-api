@@ -1,13 +1,12 @@
-package com.evan.store.services;
+package com.evan.store.payments;
 
-import com.evan.store.dtos.CheckoutRequest;
-import com.evan.store.dtos.CheckoutResponse;
 import com.evan.store.entities.Order;
 import com.evan.store.exceptions.CartEmptyException;
 import com.evan.store.exceptions.CartNotFoundException;
-import com.evan.store.exceptions.PaymentException;
 import com.evan.store.repositories.CartRepository;
 import com.evan.store.repositories.OrderRepository;
+import com.evan.store.services.AuthService;
+import com.evan.store.services.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

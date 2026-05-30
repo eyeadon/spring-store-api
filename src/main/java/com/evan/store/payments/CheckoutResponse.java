@@ -1,4 +1,4 @@
-package com.evan.store.dtos;
+package com.evan.store.payments;
 
 import lombok.Data;
 

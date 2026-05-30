@@ -1,4 +1,4 @@
-package com.evan.store.config;
+package com.evan.store.payments;
 
 import com.stripe.Stripe;
 import jakarta.annotation.PostConstruct;

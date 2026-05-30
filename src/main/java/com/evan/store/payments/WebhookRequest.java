@@ -1,4 +1,4 @@
-package com.evan.store.services;
+package com.evan.store.payments;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

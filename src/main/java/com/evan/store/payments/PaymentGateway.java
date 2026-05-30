@@ -1,4 +1,4 @@
-package com.evan.store.services;
+package com.evan.store.payments;
 
 import com.evan.store.entities.Order;
 

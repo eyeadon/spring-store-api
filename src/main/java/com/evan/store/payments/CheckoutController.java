@@ -1,13 +1,8 @@
-package com.evan.store.controllers;
+package com.evan.store.payments;
 
-import com.evan.store.dtos.CheckoutRequest;
-import com.evan.store.dtos.CheckoutResponse;
 import com.evan.store.dtos.ErrorDto;
 import com.evan.store.exceptions.CartEmptyException;
 import com.evan.store.exceptions.CartNotFoundException;
-import com.evan.store.exceptions.PaymentException;
-import com.evan.store.services.CheckoutService;
-import com.evan.store.services.WebhookRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
