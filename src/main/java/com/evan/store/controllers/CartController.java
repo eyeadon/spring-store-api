@@ -2,7 +2,7 @@ package com.evan.store.controllers;
 
 import com.evan.store.dtos.*;
 import com.evan.store.exceptions.CartNotFoundException;
-import com.evan.store.exceptions.ProductNotFoundException;
+import com.evan.store.products.ProductNotFoundException;
 import com.evan.store.services.CartService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

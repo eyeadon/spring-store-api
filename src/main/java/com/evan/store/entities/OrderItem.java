@@ -1,5 +1,6 @@
 package com.evan.store.entities;
 
+import com.evan.store.products.Product;
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

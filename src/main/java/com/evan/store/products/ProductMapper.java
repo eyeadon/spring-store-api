@@ -1,7 +1,5 @@
-package com.evan.store.mappers;
+package com.evan.store.products;
 
-import com.evan.store.dtos.ProductDto;
-import com.evan.store.entities.Product;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;

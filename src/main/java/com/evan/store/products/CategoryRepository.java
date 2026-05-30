@@ -1,6 +1,5 @@
-package com.evan.store.repositories;
+package com.evan.store.products;
 
-import com.evan.store.entities.Category;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CategoryRepository extends CrudRepository<Category, Byte> {

@@ -1,10 +1,5 @@
-package com.evan.store.controllers;
+package com.evan.store.products;
 
-import com.evan.store.dtos.ProductDto;
-import com.evan.store.entities.Product;
-import com.evan.store.mappers.ProductMapper;
-import com.evan.store.repositories.CategoryRepository;
-import com.evan.store.repositories.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

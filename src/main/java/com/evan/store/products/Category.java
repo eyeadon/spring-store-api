@@ -1,4 +1,4 @@
-package com.evan.store.entities;
+package com.evan.store.products;
 
 import jakarta.persistence.*;
 import lombok.Getter;
