@@ -1,6 +1,6 @@
 package com.evan.store.orders;
 
-import com.evan.store.dtos.ErrorDto;
+import com.evan.store.common.ErrorDto;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

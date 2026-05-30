@@ -1,4 +1,4 @@
-package com.evan.store.controllers;
+package com.evan.store.common;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

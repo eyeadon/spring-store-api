@@ -1,6 +1,5 @@
-package com.evan.store.controllers;
+package com.evan.store.common;
 
-import com.evan.store.dtos.ErrorDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;

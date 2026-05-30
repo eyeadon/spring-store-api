@@ -1,4 +1,4 @@
-package com.evan.store.filters;
+package com.evan.store.common;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

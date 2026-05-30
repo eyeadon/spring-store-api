@@ -1,6 +1,6 @@
 package com.evan.store.payments;
 
-import com.evan.store.dtos.ErrorDto;
+import com.evan.store.common.ErrorDto;
 import com.evan.store.carts.CartEmptyException;
 import com.evan.store.carts.CartNotFoundException;
 import jakarta.validation.Valid;

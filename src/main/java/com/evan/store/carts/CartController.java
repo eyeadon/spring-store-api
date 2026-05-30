@@ -1,6 +1,6 @@
 package com.evan.store.carts;
 
-import com.evan.store.dtos.*;
+import com.evan.store.common.ErrorDto;
 import com.evan.store.products.ProductNotFoundException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
