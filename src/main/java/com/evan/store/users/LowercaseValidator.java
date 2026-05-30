@@ -1,4 +1,4 @@
-package com.evan.store.validation;
+package com.evan.store.users;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

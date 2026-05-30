@@ -1,15 +1,13 @@
 package com.evan.store.services;
 
 import com.evan.store.config.JwtConfig;
-import com.evan.store.entities.Role;
-import com.evan.store.entities.User;
+import com.evan.store.users.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.crypto.SecretKey;
 import java.util.Date;
 
 @AllArgsConstructor

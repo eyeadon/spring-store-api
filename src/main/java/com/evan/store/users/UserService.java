@@ -1,6 +1,5 @@
-package com.evan.store.services;
+package com.evan.store.users;
 
-import com.evan.store.repositories.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,6 +1,5 @@
-package com.evan.store.repositories;
+package com.evan.store.users;
 
-import com.evan.store.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

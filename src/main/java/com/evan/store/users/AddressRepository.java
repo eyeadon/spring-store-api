@@ -1,6 +1,5 @@
-package com.evan.store.repositories;
+package com.evan.store.users;
 
-import com.evan.store.entities.Address;
 import org.springframework.data.repository.CrudRepository;
 
 public interface AddressRepository extends CrudRepository<Address, Long> {

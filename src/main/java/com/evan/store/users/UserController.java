@@ -1,12 +1,5 @@
-package com.evan.store.controllers;
+package com.evan.store.users;
 
-import com.evan.store.dtos.ChangePasswordRequest;
-import com.evan.store.dtos.RegisterUserRequest;
-import com.evan.store.dtos.UpdateUserRequest;
-import com.evan.store.dtos.UserDto;
-import com.evan.store.entities.Role;
-import com.evan.store.mappers.UserMapper;
-import com.evan.store.repositories.UserRepository;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;

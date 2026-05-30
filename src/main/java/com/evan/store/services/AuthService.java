@@ -1,7 +1,7 @@
 package com.evan.store.services;
 
-import com.evan.store.entities.User;
-import com.evan.store.repositories.UserRepository;
+import com.evan.store.users.User;
+import com.evan.store.users.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;

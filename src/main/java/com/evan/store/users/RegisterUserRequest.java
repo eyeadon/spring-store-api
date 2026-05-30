@@ -1,6 +1,5 @@
-package com.evan.store.dtos;
+package com.evan.store.users;
 
-import com.evan.store.validation.Lowercase;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

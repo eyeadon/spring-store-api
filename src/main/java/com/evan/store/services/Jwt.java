@@ -1,6 +1,6 @@
 package com.evan.store.services;
 
-import com.evan.store.entities.Role;
+import com.evan.store.users.Role;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 

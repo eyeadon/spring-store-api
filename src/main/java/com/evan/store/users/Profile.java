@@ -1,4 +1,4 @@
-package com.evan.store.entities;
+package com.evan.store.users;
 
 import jakarta.persistence.*;
 import lombok.*;

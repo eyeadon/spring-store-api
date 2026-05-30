@@ -1,4 +1,4 @@
-package com.evan.store.entities;
+package com.evan.store.users;
 
 public enum Role {
   USER,
