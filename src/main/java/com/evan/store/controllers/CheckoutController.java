@@ -6,7 +6,6 @@ import com.evan.store.dtos.ErrorDto;
 import com.evan.store.exceptions.CartEmptyException;
 import com.evan.store.exceptions.CartNotFoundException;
 import com.evan.store.exceptions.PaymentException;
-import com.evan.store.repositories.OrderRepository;
 import com.evan.store.services.CheckoutService;
 import com.evan.store.services.WebhookRequest;
 import jakarta.validation.Valid;
@@ -22,7 +21,6 @@ import java.util.Map;
 @RequestMapping("/checkout")
 public class CheckoutController {
   private final CheckoutService checkoutService;
-  private final OrderRepository orderRepository;
 
   @PostMapping
   public CheckoutResponse checkout(@Valid @RequestBody CheckoutRequest request) {
