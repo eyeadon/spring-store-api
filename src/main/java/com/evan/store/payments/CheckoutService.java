@@ -5,7 +5,7 @@ import com.evan.store.exceptions.CartEmptyException;
 import com.evan.store.exceptions.CartNotFoundException;
 import com.evan.store.repositories.CartRepository;
 import com.evan.store.repositories.OrderRepository;
-import com.evan.store.services.AuthService;
+import com.evan.store.auth.AuthService;
 import com.evan.store.services.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

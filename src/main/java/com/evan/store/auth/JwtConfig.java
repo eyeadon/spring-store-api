@@ -1,4 +1,4 @@
-package com.evan.store.config;
+package com.evan.store.auth;
 
 import io.jsonwebtoken.security.Keys;
 import lombok.Data;

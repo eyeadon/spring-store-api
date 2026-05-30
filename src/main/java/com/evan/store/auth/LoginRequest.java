@@ -1,4 +1,4 @@
-package com.evan.store.dtos;
+package com.evan.store.auth;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

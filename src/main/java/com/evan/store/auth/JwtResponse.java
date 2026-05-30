@@ -1,4 +1,4 @@
-package com.evan.store.dtos;
+package com.evan.store.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

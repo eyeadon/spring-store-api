@@ -1,6 +1,5 @@
-package com.evan.store.services;
+package com.evan.store.auth;
 
-import com.evan.store.config.JwtConfig;
 import com.evan.store.users.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;

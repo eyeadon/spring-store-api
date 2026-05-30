@@ -1,5 +1,6 @@
 package com.evan.store.services;
 
+import com.evan.store.auth.AuthService;
 import com.evan.store.dtos.OrderDto;
 import com.evan.store.exceptions.OrderNotFoundException;
 import com.evan.store.mappers.OrderMapper;

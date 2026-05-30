@@ -1,6 +1,5 @@
-package com.evan.store.filters;
+package com.evan.store.auth;
 
-import com.evan.store.services.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,12 +1,8 @@
-package com.evan.store.controllers;
+package com.evan.store.auth;
 
-import com.evan.store.config.JwtConfig;
-import com.evan.store.dtos.JwtResponse;
-import com.evan.store.dtos.LoginRequest;
 import com.evan.store.users.UserDto;
 import com.evan.store.users.UserMapper;
 import com.evan.store.users.UserRepository;
-import com.evan.store.services.JwtService;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;

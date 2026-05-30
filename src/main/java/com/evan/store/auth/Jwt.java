@@ -1,4 +1,4 @@
-package com.evan.store.services;
+package com.evan.store.auth;
 
 import com.evan.store.users.Role;
 import io.jsonwebtoken.Claims;

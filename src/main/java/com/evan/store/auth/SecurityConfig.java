@@ -1,6 +1,5 @@
-package com.evan.store.config;
+package com.evan.store.auth;
 
-import com.evan.store.filters.JwtAuthenticationFilter;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
