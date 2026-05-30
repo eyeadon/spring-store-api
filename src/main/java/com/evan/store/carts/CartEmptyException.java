@@ -1,4 +1,4 @@
-package com.evan.store.exceptions;
+package com.evan.store.carts;
 
 public class CartEmptyException extends RuntimeException {
   public CartEmptyException() {

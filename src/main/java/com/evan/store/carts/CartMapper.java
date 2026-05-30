@@ -1,9 +1,5 @@
-package com.evan.store.mappers;
+package com.evan.store.carts;
 
-import com.evan.store.dtos.CartDto;
-import com.evan.store.dtos.CartItemDto;
-import com.evan.store.entities.Cart;
-import com.evan.store.entities.CartItem;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

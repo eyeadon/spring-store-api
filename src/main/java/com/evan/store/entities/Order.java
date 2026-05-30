@@ -1,5 +1,6 @@
 package com.evan.store.entities;
 
+import com.evan.store.carts.Cart;
 import com.evan.store.users.User;
 import jakarta.persistence.*;
 import lombok.Getter;

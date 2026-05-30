@@ -1,4 +1,4 @@
-package com.evan.store.dtos;
+package com.evan.store.carts;
 
 import lombok.Data;
 
@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 @Data
 public class CartItemDto {
   // not coupling to ProductDto
-  private CartProductDto product;
+  private ProductDto product;
   private int quantity;
   private BigDecimal totalPrice;
 }

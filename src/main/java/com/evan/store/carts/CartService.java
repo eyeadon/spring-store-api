@@ -1,12 +1,6 @@
-package com.evan.store.services;
+package com.evan.store.carts;
 
-import com.evan.store.dtos.CartDto;
-import com.evan.store.dtos.CartItemDto;
-import com.evan.store.entities.Cart;
-import com.evan.store.exceptions.CartNotFoundException;
 import com.evan.store.products.ProductNotFoundException;
-import com.evan.store.mappers.CartMapper;
-import com.evan.store.repositories.CartRepository;
 import com.evan.store.products.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
